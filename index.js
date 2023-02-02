@@ -9,7 +9,7 @@ const questions = [
     {
         type: 'input',
         name: 'github',
-        message: 'What is your HitHub username?',
+        message: 'What is your GitHub username?',
     },
     {
         type: 'input',
@@ -54,7 +54,7 @@ const questions = [
 ];
 // function to write README file using the user input
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join.cwd(), fileName), data);
+    return fs.writeFileSync(path.join.cwd(), fileName, data);
 }
 
 // function to initialize app
@@ -116,14 +116,6 @@ init();
 
 
 
-    }
-
-
-
-
-
-
-    }
 
 
 
@@ -143,13 +135,5 @@ init();
 
 
 
-];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
 
-// TODO: Create a function to initialize app
-function init() { }
-
-// Function call to initialize app
-init();
