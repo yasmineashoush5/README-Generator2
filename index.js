@@ -53,15 +53,16 @@ const questions = [
     },
 ];
 // function to write README file using the user input
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join.cwd(), fileName, data);
-}
+
+function writeFile("README", READMEPageContent, (err) =>
+    err ? console.log(err) : console.log("Successfully created README!")
+    );
 
 // function to initialize app
 function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {
         console.log('Generating README...');
-        writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
+        writeFile('README.md', generateMarkdown({ ...inquirerResponses }));
     });
 
 }
